@@ -20,14 +20,14 @@ def vectorise_digit(j):
     return e
 
 # Define a function to load MNIST dataset
-def load_data():
+def load_data(file):
     '''
     Load the MNIST dataset from a zipped pickle file.
     Returns a tuple containing (train_data, val_data, test_data).
     '''
 
     # Load raw data
-    with gzip.open('mnist.pkl.gz', 'rb') as f:
+    with gzip.open(file, 'rb') as f:
         train_raw, val_raw, test_raw = pickle.load(f, encoding = 'latin1')
 
     # Create training data tuple
