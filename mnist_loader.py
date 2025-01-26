@@ -2,12 +2,10 @@
 Functions to load the MNIST dataset.
 '''
 
-# Import packages
 import gzip
 import numpy as np
 import pickle
 
-# Define a function to vectorise digits
 def vectorise_digit(j):
     '''
     Given a digit 0-9 as input, returns a vector with 10 elements,
@@ -19,7 +17,6 @@ def vectorise_digit(j):
     e[j] = 1.0
     return e
 
-# Define a function to load MNIST dataset
 def load_data(file):
     '''
     Load the MNIST dataset from a zipped pickle file.
