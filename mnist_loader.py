@@ -42,4 +42,4 @@ def load_data(file):
     test_y = test_raw[1]
     test_data = list(zip(test_X, test_y))
 
-    return(train_data, val_data, test_data)
+    return (train_data, val_data, test_data)
